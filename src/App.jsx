@@ -25,3 +25,4 @@ function App() {
 export default App;
 
 //FÖR ATT STARTA "npm run build"
+//npm run deploy
