@@ -7,7 +7,7 @@
     color: $mainColor;
     position:fixed;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     transition: all 2s ease;
     .wrapper{
         padding: 10px 30px;
@@ -71,22 +71,22 @@
                 width: 100%;
                 &:first-child{
                     background-color: white;
-                    -webkit-transform: translateY(12px) rotate(45deg);
-                    -ms-transform: translateY(12px) rotate(45deg);
-                    -o-transform: translateY(12px) rotate(45deg);
-                    transform: translateY(12px) rotate(45deg);
+                    -webkit-transform: translateY(11.9px) rotate(45deg);
+                    -ms-transform: translateY(11.9px) rotate(45deg);
+                    -o-transform: translateY(11.9px) rotate(45deg);
+                    transform: translateY(11.9px) rotate(45deg);
                 }
                 &:nth-child(2){
                     background-color: white;
-                    transform: translateX(-15px) rotate(0deg);
+                    transform: translateX(-45px) rotate(0deg);
                     opacity: 0;
                 }
                 &:last-child{
                     background-color: white;
-                    -webkit-transform: translateY(-12px) rotate(-45deg);
-                    -ms-transform: translateY(-12px) rotate(-45deg);
-                    -o-transform: translateY(-12px) rotate(-45deg);
-                    transform: translateY(-12px) rotate(-45deg);
+                    -webkit-transform: translateY(-11.2px) rotate(-45deg);
+                    -ms-transform: translateY(-11.2px) rotate(-45deg);
+                    -o-transform: translateY(-11.2px) rotate(-45deg);
+                    transform: translateY(-11.2px) rotate(-45deg);
 
                 }
             }
