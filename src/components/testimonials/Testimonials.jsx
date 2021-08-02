@@ -30,7 +30,7 @@ export default function Testimonials() {
         icon: "",
         title: "React To-DO list",
         desc: 
-        "A TO-DO list created with react",
+        "A TO-DO list created with React and JS, utilizes hooks and states",
         img: "",
         git: "",
         preview: "",
