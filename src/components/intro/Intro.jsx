@@ -29,7 +29,7 @@ export default function Intro() {
                     <h1>Ariton Karamani</h1>
                     <h3><span ref={textRef}></span></h3>
                 </div>
-                <a href="#aboutMe">
+                <a href="#testimonials">
                     <ExpandMoreIcon className="icon"/>
                 </a>
             </div>

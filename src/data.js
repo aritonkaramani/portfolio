@@ -6,10 +6,15 @@ export const featuredPortfolio = [
         img: <img src={FeaturedPortfolioWebsite} alt=""/>
     }
 ]
-export const webPortfolio = [
+export const webAppPortfolio = [
     {
         id: 1,
         title: "Portfolio Website",
+        img: <img src={FeaturedPortfolioWebsite} alt=""/>
+    },
+    {
+        id: 2,
+        title: "Pharmacy Website",
         img: ""
     }
 ]

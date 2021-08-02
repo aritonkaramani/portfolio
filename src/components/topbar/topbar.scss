@@ -21,6 +21,9 @@
             justify-content: space-between;
 
             .logo{
+                @include mobile{
+                    font-size: 22px;
+                }
                 font-size: 40px;
                 font-weight: 700;
                 text-decoration: none;
@@ -28,6 +31,9 @@
                 margin-right: 40px;
              }
              .itemContainer{
+                 @include mobile{
+                     display: none;
+                 }
                  display: flex;
                  align-items: center;
                  margin-right: 30px;

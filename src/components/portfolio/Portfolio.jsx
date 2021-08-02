@@ -2,7 +2,7 @@ import "./portfolio.scss";
 import FeaturedPortfolioWebsite from "../../assets/portfolioweb.png";
 import PortfolioList from "../portfolioList/PortfolioList";
 import { useEffect, useState } from "react";
-import { featuredPortfolio, webPortfolio, worksPortfolio } from "../../data";
+import { featuredPortfolio, webAppPortfolio, worksPortfolio } from "../../data";
 
 export default function Portfolio({popUp,setPopUp}) {
 
@@ -29,7 +29,7 @@ export default function Portfolio({popUp,setPopUp}) {
                 setData(featuredPortfolio);
                 break;
             case "webPortfolio":
-                setData(webPortfolio);
+                setData(webAppPortfolio);
                 break;
             case "test3":
                 setData(worksPortfolio);
