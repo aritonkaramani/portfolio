@@ -1,3 +1,38 @@
 .aboutMe{
-    background-color: white;
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .bottom{
+            background: white;
+            border-radius: 75px;
+            height: 100%;
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .bottomleft{
+                padding: 15px;
+                display: flex;
+                flex: 4;
+                .CTA{
+                    border-radius: 10px;
+                }
+            }
+            .bottomright{
+                display: flex;
+                flex: 4;
+                ul{
+                    li{
+                    }
+                }
+            }
+        }
+    }
 }
