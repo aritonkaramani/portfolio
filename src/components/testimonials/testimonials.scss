@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .testimonials{
-    background-color: crimson;
+    background-color: $hardBackground;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,11 +23,12 @@
     }
 
     .slider{
-        height: 50vh;
+        height: 65vh;
         display: flex;
         position: absolute;
         left: 0;
         transition: all 1s ease;
+ 
 
         @include mobile{
             height: 100%;
@@ -37,18 +38,22 @@
 
         .container{
             width: 100vw;
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
 
             .item{
-                width: 75vw;
-                height: 100%;
-                background-color: white;
-                border-radius: 20px;
+                width: 70vw;
+                height: 90%;
+                background-color: $softBackground;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                padding: 10px;
+                margin: 10px;
+                border: solid 10px white;
+                box-sizing: border-box;
 
                 @include mobile{
                     width: 90%;
@@ -59,7 +64,7 @@
 
                 .left{
                     flex: 4;
-                    height: 80%;
+                    height: 70%;
                     display: flex;
                     align-items: center;
                     justify-content: center;

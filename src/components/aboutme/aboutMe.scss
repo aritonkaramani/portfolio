@@ -1,35 +1,79 @@
+@import "../../global.scss";
+
 .aboutMe{
-    background-color: #e5e5e5;
+    background-color: $hardBackground;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    a{
+        color: black;
+        position: absolute;
+        bottom: 0;
+        .icon{
+            font-size: 60px;
+            animation: arrowBlink 1.5s infinite;
+            }
+
+            @keyframes arrowBlink {
+                100%{
+                opacity: 0;
+                }
+        }
+    }
     .container{
-        height: 50vh;
+        height: 70vh;
+        width: 100vw;
         display: flex;
         align-items: center;
         justify-content: center;
-        position: relative;
+        
         .bottom{
-            background: white;
-            border-radius: 75px;
+            background-color: $softBackground;
             height: 100%;
-            width: 70%;
+            width: 82%;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            border: solid white 15px;
+            box-sizing: border-box;
             .bottomleft{
                 padding: 15px;
                 display: flex;
-                flex: 4;
+                flex: 0.5;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
                 .CTA{
                     border-radius: 10px;
                 }
             }
             .bottomright{
                 display: flex;
-                flex: 4;
-                ul{
-                    li{
+                padding: 15px;
+                flex: 0.5;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                .topbottomright{
+                    height: 50%;
+                    .logoIcon{
+                        font-size: 300px;
+                        color: $mainText;
+                    }
+                }
+                .botbottomright{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    font-size: 20px;
+                    .javas{
+                    }
+                    .jss{
+                    }
+                    .htmls{
+                    }
+                    .reacts{
+                    }
+                    .sass{
                     }
                 }
             }

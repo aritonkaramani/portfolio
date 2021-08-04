@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .contact{
-    background-color: white;
+    background-color: $hardBackground;
     display: flex;
     @include mobile{
         flex-direction: column;

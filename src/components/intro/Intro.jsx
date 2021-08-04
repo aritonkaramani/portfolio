@@ -17,7 +17,7 @@ export default function Intro() {
     },[])
     return (
         <div className="intro" id="intro">
-            
+            <div className="container">
             <div className="left">
                 <div className="imgContainer">
                 <img src={Logo} alt="" />
@@ -25,14 +25,16 @@ export default function Intro() {
             </div>
             <div className="right">
                 <div className="wrapper">
-                    <h2>Hello! I am</h2>
+                    <h2>Hello! My name is</h2>
                     <h1>Ariton Karamani</h1>
                     <h3><span ref={textRef}></span></h3>
                 </div>
-                <a href="#testimonials">
+                
+            </div>
+            </div>
+            <a href="#aboutMe">
                     <ExpandMoreIcon className="icon"/>
                 </a>
-            </div>
         </div>
     )
 }
