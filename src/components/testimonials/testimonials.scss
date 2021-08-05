@@ -6,6 +6,21 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    a{
+        color: black;
+        position: absolute;
+        bottom: 0;
+        .icon{
+            font-size: 60px;
+            animation: arrowBlink 1.5s infinite;
+            }
+
+            @keyframes arrowBlink {
+                100%{
+                opacity: 0;
+                }
+        }
+    }
 
     .arrow{
         height: 100px;
@@ -23,7 +38,6 @@
     }
 
     .slider{
-        height: 65vh;
         display: flex;
         position: absolute;
         left: 0;
@@ -38,21 +52,20 @@
 
         .container{
             width: 100vw;
-            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
 
             .item{
-                width: 70vw;
-                height: 90%;
+                width: $cWidth;
+                height: $cHeight;
                 background-color: $softBackground;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 padding: 10px;
                 margin: 10px;
-                border: solid 10px white;
+                border: $outerBorder;
                 box-sizing: border-box;
 
                 @include mobile{
@@ -68,6 +81,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    border-right: 2px solid white;
                     .leftContainer{
                         width: 90%;
                         height: 70%;
@@ -98,13 +112,17 @@
                             font-size: 20px;
                         }
                         p{
-                            font-size: 13px;
+                            font-size: 18px;
                         }
                         span{
+                            display: flex;
+                            width: 100%;
                             font-size: 12px;
                             font-weight: 600;
-                            text-decoration: underline;
-                            cursor: pointer;
+                            .iconLink{
+                                padding: 5px;
+                                cursor: pointer;
+                            }
                         }
                     }
                 }

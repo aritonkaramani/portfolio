@@ -3,6 +3,7 @@ import FeaturedPortfolioWebsite from "../../assets/portfolioweb.png";
 import PortfolioList from "../portfolioList/PortfolioList";
 import { useEffect, useState } from "react";
 import { featuredPortfolio, webAppPortfolio, worksPortfolio } from "../../data";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 export default function Portfolio({popUp,setPopUp}) {
 
@@ -42,6 +43,7 @@ export default function Portfolio({popUp,setPopUp}) {
 
     return (
         <div className="portfolio" id="portfolio">
+             <div className="card">
             <h1>Portfolio</h1>
             <ul>
                 {list.map(item=>(
@@ -52,14 +54,19 @@ export default function Portfolio({popUp,setPopUp}) {
                     id={item.id}/>
                 ))}
             </ul>
-            <div className="container">
-                {data.map(d=>(
-                <div className="item">
-                {d.img}
-                <h3>{d.title}</h3>
+            
+                <div className="container">
+                    {data.map(d=>(
+                        <div className="item">
+                            {d.img}
+                        <h3>{d.title}</h3>
+                        </div>
+                    ))}           
                 </div>
-                ))}           
             </div>
+            <a href="#testimonials">
+                    <ExpandMoreIcon className="icon"/>
+            </a>
         </div>
     )
 }

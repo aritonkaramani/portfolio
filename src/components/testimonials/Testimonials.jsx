@@ -2,22 +2,28 @@ import "./testimonials.scss"
 import ArrowBack from '@material-ui/icons/ArrowBackIos';
 import ArrowForward from '@material-ui/icons/ArrowForwardIos';
 import { useState } from "react";
+import { LocalPharmacy } from "@material-ui/icons";
+import { List } from "@material-ui/icons";
+import { Work } from "@material-ui/icons";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { GitHub } from "@material-ui/icons";
+import { Visibility } from "@material-ui/icons";
 
 export default function Testimonials() {
     const [currentSlide,setCurrentSlide] = useState(0);
     const data = [{
         id: "1",
-        icon: "",
+        icon: <Work/>,
         title: "My Portfolio",
         desc:
-        "My Portfolio project that is the website you're currently looking at. Made using Javascript, SASS, React, HTML and Material UI ",
+        "The portfolio website currently being browsed. Made using Javascript, SASS, React, HTML and Material UI ",
         img: "",
-        git: "",
-        preview: "",
+        git: "https://github.com/aritonkaramani/portfolio",
+        preview: "https://aritonkaramani.github.io/portfolio",
     },
     {
         id: "2",
-        icon: "",
+        icon: <LocalPharmacy/>,
         title: "Pharmacy Landing Page",
         desc:
         "A pharmacy landing page I made for a local pharmacy, the page utilizes SASS, React, HTML, Javascript and Material UI",
@@ -27,7 +33,7 @@ export default function Testimonials() {
     },
     {
         id: "3",
-        icon: "",
+        icon: <List/>,
         title: "React To-DO list",
         desc: 
         "A TO-DO list created with React and JS, utilizes hooks and states",
@@ -53,11 +59,18 @@ export default function Testimonials() {
                     <div className="left">
                         <div className="leftContainer">
                             <div className="imgContainer">
-                                <img src={d.img} alt="" />
+                                {d.icon}
                             </div>
                             <h2>{d.title}</h2>
                             <p>{d.desc}</p>
-                            <span>Projects</span>
+                            <span>
+                                <GitHub className="iconLink" onClick={(e)=> {
+                                    window.open(d.git,"_blank");
+                                }}/>
+                                <Visibility className="iconLink" onClick={(e)=>{
+                                    window.open(d.preview,"_blank");
+                                 } }/>
+                            </span>
                         </div>
                     </div>
                     <div className="right">
@@ -69,6 +82,9 @@ export default function Testimonials() {
             </div>
             <ArrowBack className="arrow Left" onClick={()=>handleClick("left")}/>
             <ArrowForward className="arrow Right" onClick={()=>handleClick("right")}/>
+            <a href="#contact">
+                    <ExpandMoreIcon className="icon"/>
+            </a>
         </div>
     )
 }

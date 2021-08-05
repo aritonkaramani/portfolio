@@ -1,6 +1,12 @@
 import "./aboutMe.scss"
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import ComputerIcon from '@material-ui/icons/Computer';
+import {ReactComponent as Compsvg} from '../../assets/computersvgs.svg';
+import {ReactComponent as Javasvg} from '../../assets/javasvg.svg';
+import {ReactComponent as JSsvg} from '../../assets/javascriptsvg.svg';
+import {ReactComponent as Sassvg} from '../../assets/sasssvg.svg';
+import {ReactComponent as HTMLsvg} from '../../assets/htmlsvg.svg';
+import {ReactComponent as Reactsvg} from '../../assets/reactsvg.svg';
 
 export default function AboutMe() {
     return (
@@ -8,23 +14,42 @@ export default function AboutMe() {
             <div className="container">
                 <div className="bottom">
                     <div className="bottomleft">
-                        <h1>About Me</h1>
-                            <p>Hi! I'm Ariton, a 25 year old front end developer with a passion for tech. I love to solve problems using
-                           code and I love working with projects and companies that are very close to the customer. To the right you can see
-                           my skillset and I would love to hear more from you, so <button className="CTA">Lets Talk!</button>
-                            </p>
+                        <div className="left">
+                            about me
+                        </div>
+                        <div className="right">
+                            <ul>
+                                <li>Name: <span>Ariton Karamani</span></li>
+                                <li>Email: <span>ariton.karamani@gmail.com</span></li>
+                                <li>Phone: <span>+46707548727</span></li>
+                                <li>Date of birth: <span>1995/11/16</span></li>
+                            </ul>
+                        </div>
                         </div>
                     <div className="bottomright">
+                        <div className="border">
                         <div className="topbottomright">
-                            <h1>Skills</h1>
-                            <ComputerIcon className="logoIcon"/>
+                            <h1>Tech Stack</h1>
+                            <Compsvg className="logoIcon"/>
                         </div>
                         <div className="botbottomright">
-                            <div className="javas">Java</div>
-                            <div className="jss">JavaScript</div>
-                            <div className="htmls">HTML</div>
-                            <div className="reacts">React</div>
-                            <div className="sass">SASS</div>
+                            <div className="javas">
+                                <Javasvg />
+                                Java
+                            </div>
+                            <div className="jss">
+                                <JSsvg className="jsIkon"/>
+                                JavaScript</div>
+                            <div className="htmls">
+                                <HTMLsvg className="htmlIkon"/>
+                                HTML5</div>
+                            <div className="reacts">
+                                <Reactsvg className="reactIkon"/>
+                                React</div>
+                            <div className="sass">
+                                <Sassvg className="sassIkon"/>
+                                SASS</div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -9,6 +9,7 @@ export default function Contact() {
     }
     return (
         <div className="contact" id="contact">
+            <div className="card">
             <div className="left"></div>
             <div className="right">
                 <h2>Contact</h2>
@@ -19,7 +20,7 @@ export default function Contact() {
                     {message && <span>Thanks, I will reply as soon as possible</span>}
                 </form>
             </div>
-            
+            </div>
         </div>
     )
 }

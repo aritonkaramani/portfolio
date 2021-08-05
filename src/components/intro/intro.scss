@@ -34,10 +34,12 @@
     }
     .container{
         display: flex;
-        width: 80%;
+        width: $cWidth;
+        height: $cHeight;
         background-color: $softBackground;
-        border: solid white 15px;
+        border: $outerBorder;
         padding: 5px;
+        box-sizing: border-box;
 
     @include mobile{
         padding: 0;
@@ -59,8 +61,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 800px;
-            height: 800px;
+            width: 700px;
+            height: 700px;
             overflow: hidden;
             
             @include mobile{
