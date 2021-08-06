@@ -17,15 +17,16 @@ export default function Contact() {
             </div>
             <div className="right">
                 <h2>Contact</h2>
-                <form action="mail.php" method="post" onSubmit={handleSubmit}>
+                <form action="mail.php" method="post" >
                     <input type="text" name="name" placeholder="Your name"/>
                     <input type="email" name="emailaddress" placeholder="Email" />
-                    <textarea placeholder="Message"></textarea>
+                    <textarea type="text" name="message" placeholder="Message"></textarea>
                     <button type="submit">Send</button>
-                    {message && <span>Thanks, I will reply as soon as possible</span>}
+                   
                 </form>
             </div>
             </div>
         </div>
     )
 }
+/*  {message && <span>Thanks, I will reply as soon as possible</span>} */
