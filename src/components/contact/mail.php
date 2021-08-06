@@ -4,7 +4,7 @@ $name = $_POST['name'];
 $email= $_POST['email'];
 $message= $_POST['message'];
 
-$to = "aritonkaramani@gmail.com";
+$to = "ariton.karamani@gmail.com";
 
 $subject = "Work Opportunity";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
