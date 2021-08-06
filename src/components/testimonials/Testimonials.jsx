@@ -16,7 +16,7 @@ export default function Testimonials() {
         icon: <Work/>,
         title: "My Portfolio",
         desc:
-        "The portfolio website currently being browsed. Made using Javascript, SASS, React, HTML and Material UI ",
+        "The portfolio website currently being browsed. Made using Javascript, SASS, React, HTML, PHP and Material UI ",
         img: "",
         git: "https://github.com/aritonkaramani/portfolio",
         preview: "https://aritonkaramani.github.io/portfolio",
@@ -49,7 +49,7 @@ export default function Testimonials() {
         : setCurrentSlide(currentSlide < data.length -1 ? currentSlide +1 : 0)
     };
     return (
-        <div className="testimonials" id="testimonials">
+        <div className="testimonials" id="projects">
             <div 
             className="slider" 
             style={{transform:`translateX(-${currentSlide * 100}vw)`}}>

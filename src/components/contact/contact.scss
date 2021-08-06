@@ -19,6 +19,16 @@
 
     .left{
         flex: 0.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        border-right: $innerBorder;
+        .icon{
+            height: 70%;
+            width: 70%;
+            
+        }
     }
     .right{
         flex: 0.5;

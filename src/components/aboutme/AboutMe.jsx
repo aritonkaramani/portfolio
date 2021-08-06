@@ -54,7 +54,7 @@ export default function AboutMe() {
                     </div>
                 </div>
             </div>
-            <a href="#portfolio">
+            <a href="#designs">
                     <ExpandMoreIcon className="icon"/>
             </a>
         </div>

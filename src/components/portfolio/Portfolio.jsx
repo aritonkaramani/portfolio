@@ -42,7 +42,7 @@ export default function Portfolio({popUp,setPopUp}) {
             },[selected])
 
     return (
-        <div className="portfolio" id="portfolio">
+        <div className="portfolio" id="designs">
              <div className="card">
             <h1>Portfolio</h1>
             <ul>
@@ -64,7 +64,7 @@ export default function Portfolio({popUp,setPopUp}) {
                     ))}           
                 </div>
             </div>
-            <a href="#testimonials">
+            <a href="#projects">
                     <ExpandMoreIcon className="icon"/>
             </a>
         </div>

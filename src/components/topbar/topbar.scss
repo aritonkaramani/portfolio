@@ -18,12 +18,14 @@
         .left{
             display: flex;
             align-items: center;
-            justify-content: space-between;
-
+            justify-content: center;
             .logo{
                 @include mobile{
                     font-size: 22px;
                 }
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 font-size: 40px;
                 font-weight: 700;
                 text-decoration: none;
@@ -31,15 +33,25 @@
                 margin-right: 40px;
              }
              .itemContainer{
+                 display: flex;
+                 flex-direction: row;
+                 align-items: center;
                  @include mobile{
                      display: none;
                  }
-                 display: flex;
-                 align-items: center;
-                 margin-right: 30px;
                  .icon{
-                     font-size: 18px;
-                     margin-right: 5px;
+                     display: flex;
+                     flex-direction: row;
+                     cursor: pointer;
+                     &.git{
+                         width: 5%;
+                         height: 5%;
+                     }
+                     &.linkedIn{
+                         margin-left: 20px;
+                         width: 6.5%;
+                         height: 6.5%;
+                     }
                  }
                  span{
                      font-size: 15px;
