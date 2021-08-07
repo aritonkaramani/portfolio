@@ -4,7 +4,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import AboutMe from "./components/aboutme/AboutMe";
 import Contact from "./components/contact/Contact";
 import "./app.scss";
-import { useState, useRef } from "react";
+import { useState} from "react";
 import Menu from "./components/menu/Menu";
 import Testimonials from "./components/testimonials/Testimonials";
 

@@ -1,13 +1,7 @@
 import "./contact.scss"
-import { useState } from "react";
 import {ReactComponent as MeetingIcon} from '../../assets/meetingicon.svg';
 
 export default function Contact() {
-    const [message,setMessage] = useState(false);
-    const handleSubmit = (e)=>{
-        e.preventDefault();
-        setMessage(true);
-    }
     return (
         <div className="contact" id="contact">
             <div className="card">
@@ -31,4 +25,3 @@ export default function Contact() {
     </div>
     )
 }
-/*  {message && <span>Thanks, I will reply as soon as possible</span>} */

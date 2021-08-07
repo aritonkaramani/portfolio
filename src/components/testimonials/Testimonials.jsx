@@ -8,6 +8,8 @@ import { Work } from "@material-ui/icons";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { GitHub } from "@material-ui/icons";
 import { Visibility } from "@material-ui/icons";
+import webportimg from '../../assets/webport.png';
+import apotekjoni from '../../assets/apotekjoni.png';
 
 export default function Testimonials() {
     const [currentSlide,setCurrentSlide] = useState(0);
@@ -16,8 +18,8 @@ export default function Testimonials() {
         icon: <Work/>,
         title: "My Portfolio",
         desc:
-        "The portfolio website currently being browsed. Made using Javascript, SASS, React, HTML, PHP and Material UI ",
-        img: "",
+        "The portfolio website currently being browsed. Made using Javascript, SASS, React, HTML and Material UI ",
+        img: webportimg,
         git: "https://github.com/aritonkaramani/portfolio",
         preview: "https://aritonkaramani.github.io/portfolio",
     },
@@ -27,9 +29,9 @@ export default function Testimonials() {
         title: "Pharmacy Landing Page",
         desc:
         "A pharmacy landing page I made for a local pharmacy, the page utilizes SASS, React, HTML, Javascript and Material UI",
-        img: "",
-        git: "",
-        preview: "",
+        img: apotekjoni,
+        git: "https://github.com/aritonkaramani/apotekjoni",
+        preview: "https://aritonkaramani.github.io/apotekjoni",
     },
     {
         id: "3",
@@ -74,7 +76,7 @@ export default function Testimonials() {
                         </div>
                     </div>
                     <div className="right">
-                        <img src="" alt="" />
+                        <img src={d.img} alt="" />
                     </div>
                     </div>
                 </div>

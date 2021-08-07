@@ -1,6 +1,5 @@
 import "./aboutMe.scss"
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import ComputerIcon from '@material-ui/icons/Computer';
 import {ReactComponent as Compsvg} from '../../assets/computersvgs.svg';
 import {ReactComponent as Javasvg} from '../../assets/javasvg.svg';
 import {ReactComponent as JSsvg} from '../../assets/javascriptsvg.svg';
@@ -14,9 +13,8 @@ export default function AboutMe() {
             <div className="container">
                 <div className="bottom">
                     <div className="bottomleft">
-                        <div className="left">
-                            about me
-                        </div>
+                    About me
+                    
                         <div className="right">
                             <ul>
                                 <li>Name: <span>Ariton Karamani</span></li>
@@ -27,27 +25,28 @@ export default function AboutMe() {
                         </div>
                         </div>
                     <div className="bottomright">
+                    Tech Stack
                         <div className="border">
                         <div className="topbottomright">
-                            <h1>Tech Stack</h1>
+                            
                             <Compsvg className="logoIcon"/>
                         </div>
                         <div className="botbottomright">
                             <div className="javas">
-                                <Javasvg />
+                                <Javasvg className="Ikon"/>
                                 Java
                             </div>
                             <div className="jss">
-                                <JSsvg className="jsIkon"/>
+                                <JSsvg className="Ikon"/>
                                 JavaScript</div>
                             <div className="htmls">
-                                <HTMLsvg className="htmlIkon"/>
+                                <HTMLsvg className="Ikon"/>
                                 HTML5</div>
                             <div className="reacts">
-                                <Reactsvg className="reactIkon"/>
+                                <Reactsvg className="Ikon"/>
                                 React</div>
                             <div className="sass">
-                                <Sassvg className="sassIkon"/>
+                                <Sassvg className="Ikon"/>
                                 SASS</div>
                             </div>
                         </div>

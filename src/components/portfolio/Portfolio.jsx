@@ -1,5 +1,4 @@
 import "./portfolio.scss";
-import FeaturedPortfolioWebsite from "../../assets/portfolioweb.png";
 import PortfolioList from "../portfolioList/PortfolioList";
 import { useEffect, useState } from "react";
 import { featuredPortfolio, webAppPortfolio, worksPortfolio } from "../../data";
@@ -16,11 +15,11 @@ export default function Portfolio({popUp,setPopUp}) {
         },
         {
             id: "webPortfolio",
-            title: "Web App",
+            title: "Websites",
         },
         {
             id: "test3",
-            title: "WIP",
+            title: "Cards",
         }
     ];
 
@@ -44,7 +43,7 @@ export default function Portfolio({popUp,setPopUp}) {
     return (
         <div className="portfolio" id="designs">
              <div className="card">
-            <h1>Portfolio</h1>
+            <h2>Designs</h2>
             <ul>
                 {list.map(item=>(
                     <PortfolioList 
@@ -57,12 +56,23 @@ export default function Portfolio({popUp,setPopUp}) {
             
                 <div className="container">
                     {data.map(d=>(
-                        <div className="item">
+                        <div className="item" onClick={()=>{
+                            window.open(d.url, "_blank");
+                        }}>
                             {d.img}
                         <h3>{d.title}</h3>
+                        <div className="smallContain">
+                        <div className="git" onClick={()=>{
+                            window.open(d.git, "_blank");
+                        }}>GitHub</div>
+                        <div className="live" onClick={()=>{
+                            window.open(d.live,"_blank");
+                        }}>Live Preview</div>
                         </div>
-                    ))}           
+                        </div>
+                    ))}
                 </div>
+
             </div>
             <a href="#projects">
                     <ExpandMoreIcon className="icon"/>

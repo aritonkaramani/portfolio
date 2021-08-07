@@ -72,12 +72,16 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        flex-direction: column;
 
         @include mobile{
             width: 100%;
         }
 
         .item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 33vw;
             height: 25vh;
             border-radius: 20px;
@@ -88,8 +92,18 @@
             justify-content: center;
             color: white;
             position: relative;
-            transition: all .5s ease;
-            cursor: pointer;
+            transition: all 1s ease;
+            .smallContain{
+                display: flex;
+                .git{
+                    display: none;
+                }
+                .live{
+                    display: none;
+                }
+            }
+            
+
 
             @include mobile{
                 width: 100%;
@@ -113,9 +127,37 @@
 
             &:hover{
                 background-color: $mainColor;
+                display: flex;
+                flex-direction: column;
+                h3{
+                    display: flex;
+                    position: relative;
+                }
+                .smallContain{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 5px;
+
+                    >*{
+                        display: flex;
+                        padding: 5px;
+                        margin: 5px;
+                        justify-content: center;
+                        align-items: center;
+                        border: solid white 2px;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: white;
+                            color: $mainColor;
+                        }
+                    }
+                }   
                 img{
+                    display: none;
                     z-index: 0;
-                    opacity: 0.3;
+                    opacity: 0;
                     
                 }
             }
