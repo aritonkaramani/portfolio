@@ -6,6 +6,7 @@ import {ReactComponent as JSsvg} from '../../assets/javascriptsvg.svg';
 import {ReactComponent as Sassvg} from '../../assets/sasssvg.svg';
 import {ReactComponent as HTMLsvg} from '../../assets/htmlsvg.svg';
 import {ReactComponent as Reactsvg} from '../../assets/reactsvg.svg';
+import {ReactComponent as Git8} from '../../assets/icons8-git.svg';
 
 export default function AboutMe() {
     return (
@@ -48,6 +49,10 @@ export default function AboutMe() {
                             <div className="sass">
                                 <Sassvg className="Ikon"/>
                                 SASS</div>
+                            <div className="git">
+                                <Git8 className="Ikon"/>
+                                Git
+                            </div>
                             </div>
                         </div>
                     </div>

@@ -33,8 +33,12 @@
         width: $cWidth;
         position: relative;
     h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         top: 0;
-        font-size: 50px;
+        font-size: 42px;
+        height: 10%;
 
         @include mobile{
             font-size: 20px;
@@ -42,12 +46,12 @@
         }
     }
     ul{
-        margin: 10px;
         padding: 0;
         list-style: none;
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 10%;
         @include mobile{
             flex-wrap: wrap;
             justify-content: center;
@@ -75,7 +79,7 @@
  
     .container{
         width: 100%;
-        height: 85%;
+        height: 80%;
         display: flex;
         align-items: center;
         justify-content: center;
