@@ -13,11 +13,14 @@
     align-items: center;
     justify-content: center;
     transition: all 1s ease;
+    @include mobile{
+        width: 100%;
+        right: -100%;
+    }
 
     &.active{
         right: 0;
     }
-
     ul{
         margin: 0;
         padding: 0;
@@ -28,6 +31,10 @@
         width: 60%;
         li{
             margin-bottom: 25px;
+            .icon{
+                margin: 5px;
+                cursor: pointer;
+            }
             a{
                 font-size: inherit;
                 color:inherit;

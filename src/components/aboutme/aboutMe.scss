@@ -76,7 +76,7 @@
                             padding: 25px 0;
                             font-size: 0.6em;
                             @include mobile{
-                                font-size: 14px;
+                                font-size: 13px;
                                 justify-content: space-between;
                                 padding: 5px;
                             }
@@ -141,7 +141,7 @@
                     @include mobile{
                         font-size: 10px;
                         flex-wrap: wrap;
-                        height: 90%;
+                        height: 100%;
                         width: 100%;
                     }
                     > *{
@@ -153,9 +153,8 @@
                         width: 30%;
                         padding: 4px;
                         @include mobile{
-                            height: 35%;
+                            width: 25%;
                             flex-wrap: nowrap;
-                            font-size: 11px;
                         }
                     }
                 }

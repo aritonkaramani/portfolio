@@ -1,4 +1,5 @@
-import "./menu.scss"
+import "./menu.scss";
+import {GitHub,LinkedIn} from "@material-ui/icons";
 
 export default function Menu({menuOpen, setMenuOpen}) {
     return (
@@ -19,8 +20,15 @@ export default function Menu({menuOpen, setMenuOpen}) {
             <li onClick={()=>setMenuOpen(false)}> 
                 <a href="#contact">Contact</a>
             </li>
+            <li>
+            <GitHub className="icon git" onClick={()=>{
+                            window.open("https://www.github.com/aritonkaramani","_blank");
+                        }}/>
+            <LinkedIn className="icon linkedIn" onClick={()=>{
+                            window.open("https://www.linkedin.com/in/aritonkaramani","_blank");
+                        }}/>
+            </li>
             </ul>
-            
         </div>
     )
 }

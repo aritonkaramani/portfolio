@@ -6,6 +6,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 export default function Portfolio({popUp,setPopUp}) {
 
+
     const [selected,setSelected] = useState("featured");
     const [data, setData] = useState([])
     const list = [
@@ -56,18 +57,20 @@ export default function Portfolio({popUp,setPopUp}) {
             
                 <div className="container">
                     {data.map(d=>(
-                        <div className="item" onClick={()=>{
-                            window.open(d.url, "_blank");
-                        }}>
+                        <div className="item">
                             {d.img}
                         <h3>{d.title}</h3>
                         <div className="smallContain">
                         <div className="git" onClick={()=>{
-                            window.open(d.git, "_blank");
-                        }}>GitHub</div>
+                            window.open(d.git,"_blank")
+                        }
+                            
+                        }>GitHub</div>
                         <div className="live" onClick={()=>{
-                            window.open(d.live,"_blank");
-                        }}>Live Preview</div>
+                            window.open(d.live,"_blank")
+                        }
+                            
+                        }>Live Preview</div>
                         </div>
                         </div>
                     ))}
