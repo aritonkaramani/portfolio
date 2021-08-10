@@ -5,19 +5,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    .card{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: $cHeight;
-        width: $cWidth;
-        background-color: $softBackground;
-        border: $outerBorder;
-        @include mobile{
-            display: flex;
-            flex-direction: column;
-        }
-
+    flex-direction: row;
+    @include mobile{
+        flex-direction: column;
+    }
     .left{
         flex: 0.5;
         display: flex;
@@ -70,7 +61,7 @@
             justify-content: space-around;
             padding: 5px;
             input{
-                width: 300px;
+                width: 400px;
                 height: 30px;
                 font-size: 14px;
                 margin: 5px;
@@ -80,7 +71,7 @@
                 }
             }
             textarea{
-                width: 300px;
+                width: 400px;
                 height: 200px;
                 font-size: 14px;
                 resize: none;
@@ -91,7 +82,7 @@
                 }
             }
             button{
-                width: 150px;
+                width: 200px;
                 height: 30px;
                 color:white;
                 background-color: crimson;
@@ -114,5 +105,4 @@
             }
         }
     }
-}
 }

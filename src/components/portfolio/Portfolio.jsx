@@ -43,7 +43,6 @@ export default function Portfolio({popUp,setPopUp}) {
 
     return (
         <div className="portfolio" id="designs">
-             <div className="card">
             <h2>Designs</h2>
             <ul>
                 {list.map(item=>(
@@ -77,6 +76,5 @@ export default function Portfolio({popUp,setPopUp}) {
                 </div>
 
             </div>
-        </div>
     )
 }

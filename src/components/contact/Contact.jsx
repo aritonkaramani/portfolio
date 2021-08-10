@@ -4,7 +4,6 @@ import {ReactComponent as MeetingIcon} from '../../assets/meetingicon.svg';
 export default function Contact() {
     return (
         <div className="contact" id="contact">
-            <div className="card">
                 <div className="left">
                     <MeetingIcon className="icon"/>
 
@@ -22,6 +21,5 @@ export default function Contact() {
                     </div>
             </div>
         </div>
-    </div>
     )
 }

@@ -11,10 +11,11 @@ import {ReactComponent as Git8} from '../../assets/icons8-git.svg';
 export default function AboutMe() {
     return (
         <div className="aboutMe" id="aboutMe">
-            <div className="container">
+                <div className="title">
+                    <p>About me</p>
+                </div>
                 <div className="bottom">
                     <div className="bottomleft">
-                    About me
                     
                         <div className="right">
                             <ul>
@@ -26,11 +27,9 @@ export default function AboutMe() {
                         </div>
                         </div>
                     <div className="bottomright">
-                    Tech Stack
                         <div className="border">
                         <div className="topbottomright">
-                            
-                            <Compsvg className="logoIcon"/>
+
                         </div>
                         <div className="botbottomright">
                             <div className="javas">
@@ -58,6 +57,5 @@ export default function AboutMe() {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }

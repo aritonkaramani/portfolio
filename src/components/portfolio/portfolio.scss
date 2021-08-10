@@ -4,8 +4,6 @@
     background-color: $hardBackground;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     position: relative;
     a{
         color: black;
@@ -22,16 +20,6 @@
                 }
         }
     }
-    .card{
-        background-color: $softBackground;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        border: $outerBorder;
-        box-sizing: border-box;
-        height: $cHeight;
-        width: $cWidth;
-        position: relative;
     h2{
         display: flex;
         align-items: center;
@@ -95,7 +83,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 25%;
             width: 25%;
             border-radius: 20px;
             border: 1px solid rgb(230, 230, 230);
@@ -104,6 +91,7 @@
             position: relative;
             transition: all 1s ease;
             flex-direction: row;
+            position: relative;
             .smallContain{
                 display: flex;
                 .git{
@@ -141,8 +129,10 @@
                 flex-direction: column;
                 h3{
                     display: flex;
-                    position: relative;
+                    position: absolute;
+                    top: 25%;
                     @include mobile{
+                        display: none;
                         font-size: 15px;
                     }
                 }
@@ -151,6 +141,7 @@
                     align-items: center;
                     justify-content: center;
                     padding: 5px;
+                    position: absolute;
                     @include mobile{
                         display: flex;
                         align-items: center;
@@ -176,7 +167,6 @@
                     }
                 }   
                 img{
-                    display: none;
                     z-index: 0;
                     opacity: 0;
                     
@@ -184,5 +174,4 @@
             }
         }
     }
-}
 }
