@@ -1,7 +1,7 @@
-import PortWeb from "../src/assets/webport.png";
-import ApoJoni from "../src/assets/apotekjoni.png";
-import ThreeCard from "../src/assets/3card.png";
-import PrevCard from "../src/assets/PrevCards.png";
+import PortWeb from "../src/assets/webport-min.jpg";
+import ApoJoni from "../src/assets/apotekjoni-min.jpg";
+import ThreeCard from "../src/assets/3card-min.jpg";
+import PrevCard from "../src/assets/PrevCards-min.jpg";
 export const featuredPortfolio = [
     {
         id: 1,

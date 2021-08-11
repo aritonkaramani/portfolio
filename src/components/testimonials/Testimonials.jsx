@@ -8,8 +8,8 @@ import { Work } from "@material-ui/icons";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { GitHub } from "@material-ui/icons";
 import { Visibility } from "@material-ui/icons";
-import webportimg from '../../assets/webport.png';
-import apotekjoni from '../../assets/apotekjoni.png';
+import webportimg from '../../assets/webport-min.jpg';
+import apotekjoni from '../../assets/apotekjoni-min.jpg';
 
 export default function Testimonials() {
     const [currentSlide,setCurrentSlide] = useState(0);

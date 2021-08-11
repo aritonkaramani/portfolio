@@ -1,11 +1,19 @@
 import "./intro.scss";
-import Logo from '../../assets/CV-Foto-Farg.jpeg';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'; //Down arrow
 import { init } from 'ityped';
 import { useEffect, useRef } from "react";
-
 export default function Intro() {
     const textRef = useRef();
+
+    var users = 100;
+    const final = [];
+
+    for (let i = 0; i<users; i++){
+        final.push(<div className="circle-container">
+            <div className="circle"></div>
+        </div>
+            )
+    }
     
     useEffect(() =>{
         init(textRef.current, {
@@ -17,18 +25,17 @@ export default function Intro() {
     },[])
     return (
         <div className="intro" id="intro">
-            <div className="left">
-                <div className="imgContainer">
-                <img src={Logo} alt="" />
-                </div>
-            </div>
-            <div className="right">
+                {final}
                 <div className="wrapper">
+                    
+                    
+                    <div className="title">
                     <h2>Hello! My name is</h2>
                     <h1>Ariton Karamani</h1>
                     <h3><span ref={textRef}></span></h3>
+                    </div>
+                    
                 </div>
-            </div>
             <a href="#aboutMe">
                     <ExpandMoreIcon className="icon"/>
                 </a>

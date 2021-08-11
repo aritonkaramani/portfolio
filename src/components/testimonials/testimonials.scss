@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .testimonials{
-    background-color: $hardBackground;
+    background: radial-gradient(ellipse at top, #1b2735 0%, #10121b 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,7 +66,7 @@
             .item{
                 width: $cWidth;
                 height: $cHeight;
-                background-color: $softBackground;
+                background: $background;
                 display: flex;
                 align-items: center;
                 justify-content: center;
