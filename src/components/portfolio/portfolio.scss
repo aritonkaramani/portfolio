@@ -27,6 +27,7 @@
         top: 0;
         font-size: 42px;
         height: 10%;
+        color: white;
 
         @include mobile{
             font-size: 20px;
@@ -51,14 +52,15 @@
             border-radius: 10px;
             box-sizing: border-box;
             cursor: pointer;
+            color: $mainText;
             @include mobile{
                 font-size: 12px;
                 margin: 0;
             }
 
             &.active{
-                background-color: $mainColor;
-                color: white;
+                background-color:white;
+                color: $mainText;
             }
         }
         

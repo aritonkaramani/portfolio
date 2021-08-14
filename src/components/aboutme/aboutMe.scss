@@ -7,13 +7,14 @@
     justify-content: center;
     position: relative;
     flex-direction: column;
+    color: white;
 
     a{
-        color: black;
+        color:white;
         position: absolute;
         bottom: 0;
         .icon{
-            font-size: 60px;
+            font-size: 80px;
             animation: arrowBlink 1.5s infinite;
             }
 
@@ -54,29 +55,12 @@
                     flex-direction: column;
                     width: 90%;
                     font-size: 42px;
+                    img{
+                        width: 50%;
+                    }
                     @include mobile{
                         border-bottom: $innerBorder;
                         margin: 25px;
-                    }
-                    ul{
-                        display: flex;
-                        flex-direction: column;
-                        flex-wrap: wrap;
-                        position: relative;
-                        width: 100%;
-                        padding-left: 0;
-                        li{
-                            display: flex;
-                            justify-content: space-between;
-                            flex-wrap: wrap;
-                            padding: 25px 0;
-                            font-size: 0.6em;
-                            @include mobile{
-                                font-size: 13px;
-                                justify-content: space-between;
-                                padding: 5px;
-                            }
-                        }
                     }
                 }
             }
@@ -110,6 +94,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    flex-direction: column;
                     width: 75%;
                     font-size: 20px;
                     flex-wrap: wrap;
@@ -119,6 +104,35 @@
                         height: 10%;
                         width: 100%;
                     }
+                    .info{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        p{
+                            font-size: 20px;
+                            
+                        }
+                        .CTA{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: $mainText;
+                            border: 1px solid white;
+                            width: 20%;
+                            border-radius: 20px;
+                            background-color: white;
+                            cursor: pointer;
+                            position: relative;
+                            text-decoration: none;
+                        }
+                    }
+                    .techstack{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        flex-wrap: wrap;
                     > *{
                         display: flex;
                         align-items: center;
@@ -131,6 +145,7 @@
                             height: 15vh;
                         }
                     }
+                }
                 }
             }
         }

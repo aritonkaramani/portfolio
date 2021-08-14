@@ -1,12 +1,12 @@
 import "./aboutMe.scss"
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import {ReactComponent as Compsvg} from '../../assets/computersvgs.svg';
 import {ReactComponent as Javasvg} from '../../assets/javasvg.svg';
 import {ReactComponent as JSsvg} from '../../assets/javascriptsvg.svg';
-import {ReactComponent as Sassvg} from '../../assets/sasssvg.svg';
+import {ReactComponent as Sassvg} from '../../assets/icons8-sass.svg';
 import {ReactComponent as HTMLsvg} from '../../assets/htmlsvg.svg';
 import {ReactComponent as Reactsvg} from '../../assets/reactsvg.svg';
 import {ReactComponent as Git8} from '../../assets/icons8-git.svg';
+import CVFoto from '../../assets/CV-Foto-Farg.jpeg';
 
 export default function AboutMe() {
     return (
@@ -18,12 +18,7 @@ export default function AboutMe() {
                     <div className="bottomleft">
                     
                         <div className="right">
-                            <ul>
-                                <li>Name: <span>Ariton Karamani</span></li>
-                                <li>Email: <span>ariton.karamani@gmail.com</span></li>
-                                <li>Phone: <span>+46707548727</span></li>
-                                <li>Date of birth: <span>1995/11/16</span></li>
-                            </ul>
+                            <img src={CVFoto} alt=""/>
                         </div>
                         </div>
                     <div className="bottomright">
@@ -32,6 +27,16 @@ export default function AboutMe() {
 
                         </div>
                         <div className="botbottomright">
+                            <div className="info">
+                                <p>I am a front end developer with a passion for creating and coding. 
+                                    I do mostly frontend but I'm always willing to expand my knowledge in unknown areas.
+                                    Feel free to look at my projects if you scroll down or if you have seen enough  
+                                </p>
+                                <a href="#contact" className="CTA">Lets Talk</a>
+                            </div>
+                            <div className="techstack">
+
+
                             <div className="javas">
                                 <Javasvg className="Ikon"/>
                                 Java
@@ -53,9 +58,13 @@ export default function AboutMe() {
                                 Git
                             </div>
                             </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <a href="#designs">
+                    <ExpandMoreIcon className="icon"/>
+                </a>
             </div>
     )
 }
