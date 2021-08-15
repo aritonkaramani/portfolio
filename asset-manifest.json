@@ -1,33 +1,32 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.fbd320e6.chunk.css",
-    "main.js": "/portfolio/static/js/main.f3dc96f6.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f3dc96f6.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.f78e290c.chunk.css",
+    "main.js": "/portfolio/static/js/main.389bdd31.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.389bdd31.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.a9f76519.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.a9f76519.js.map",
-    "static/js/2.cfc55e51.chunk.js": "/portfolio/static/js/2.cfc55e51.chunk.js",
-    "static/js/2.cfc55e51.chunk.js.map": "/portfolio/static/js/2.cfc55e51.chunk.js.map",
+    "static/js/2.2e2f6d3c.chunk.js": "/portfolio/static/js/2.2e2f6d3c.chunk.js",
+    "static/js/2.2e2f6d3c.chunk.js.map": "/portfolio/static/js/2.2e2f6d3c.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.fbd320e6.chunk.css.map": "/portfolio/static/css/main.fbd320e6.chunk.css.map",
-    "static/js/2.cfc55e51.chunk.js.LICENSE.txt": "/portfolio/static/js/2.cfc55e51.chunk.js.LICENSE.txt",
-    "static/media/3card.815f76ed.png": "/portfolio/static/media/3card.815f76ed.png",
+    "static/css/main.f78e290c.chunk.css.map": "/portfolio/static/css/main.f78e290c.chunk.css.map",
+    "static/js/2.2e2f6d3c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.2e2f6d3c.chunk.js.LICENSE.txt",
+    "static/media/3card-min.71ddb2c8.jpg": "/portfolio/static/media/3card-min.71ddb2c8.jpg",
     "static/media/CV-Foto-Farg.5550b8e5.jpeg": "/portfolio/static/media/CV-Foto-Farg.5550b8e5.jpeg",
-    "static/media/PrevCards.7c70f17d.png": "/portfolio/static/media/PrevCards.7c70f17d.png",
-    "static/media/apotekjoni.a81d4aa6.png": "/portfolio/static/media/apotekjoni.a81d4aa6.png",
-    "static/media/computersvgs.c87ea348.svg": "/portfolio/static/media/computersvgs.c87ea348.svg",
+    "static/media/PrevCards-min.6b140efc.jpg": "/portfolio/static/media/PrevCards-min.6b140efc.jpg",
+    "static/media/apotekjoni-min.7f050e80.jpg": "/portfolio/static/media/apotekjoni-min.7f050e80.jpg",
     "static/media/htmlsvg.4395a089.svg": "/portfolio/static/media/htmlsvg.4395a089.svg",
     "static/media/icons8-git.aeeb13ab.svg": "/portfolio/static/media/icons8-git.aeeb13ab.svg",
+    "static/media/icons8-sass.a17505e3.svg": "/portfolio/static/media/icons8-sass.a17505e3.svg",
     "static/media/javascriptsvg.854644f5.svg": "/portfolio/static/media/javascriptsvg.854644f5.svg",
     "static/media/javasvg.b4a0adbd.svg": "/portfolio/static/media/javasvg.b4a0adbd.svg",
-    "static/media/meetingicon.3eec4c00.svg": "/portfolio/static/media/meetingicon.3eec4c00.svg",
+    "static/media/mail-svgrepo-com.1bee01c4.svg": "/portfolio/static/media/mail-svgrepo-com.1bee01c4.svg",
     "static/media/reactsvg.abc19130.svg": "/portfolio/static/media/reactsvg.abc19130.svg",
-    "static/media/sasssvg.daebe632.svg": "/portfolio/static/media/sasssvg.daebe632.svg",
-    "static/media/webport.5ca6877e.png": "/portfolio/static/media/webport.5ca6877e.png"
+    "static/media/webport-min.269411d5.jpg": "/portfolio/static/media/webport-min.269411d5.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.a9f76519.js",
-    "static/js/2.cfc55e51.chunk.js",
-    "static/css/main.fbd320e6.chunk.css",
-    "static/js/main.f3dc96f6.chunk.js"
+    "static/js/2.2e2f6d3c.chunk.js",
+    "static/css/main.f78e290c.chunk.css",
+    "static/js/main.389bdd31.chunk.js"
   ]
 }
