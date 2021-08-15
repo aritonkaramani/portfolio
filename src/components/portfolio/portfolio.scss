@@ -3,21 +3,32 @@
 .portfolio{
     background: $background;
     display: flex;
+    align-items: center;
     flex-direction: column;
     position: relative;
     a{
-        color: black;
+        display: flex;
         position: absolute;
-        bottom: 0;
+        bottom: 10px;
+        @include mobile{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         .icon{
-            font-size: 60px;
+            font-size: 80px;
+            color: white;
             animation: arrowBlink 1.5s infinite;
+            @include mobile{
+                display: none;
             }
+        }
 
-            @keyframes arrowBlink {
-                100%{
+        @keyframes arrowBlink {
+            100%{
                 opacity: 0;
-                }
+            }
         }
     }
     h2{
@@ -25,12 +36,13 @@
         align-items: center;
         justify-content: center;
         top: 0;
-        font-size: 42px;
+        font-size: 64px;
         height: 10%;
         color: white;
 
         @include mobile{
-            font-size: 20px;
+            font-size: 40px;
+            padding: 50px;
             height: 7%;
         }
     }
@@ -60,7 +72,7 @@
 
             &.active{
                 background-color:white;
-                color: $mainText;
+                color: black;
             }
         }
         

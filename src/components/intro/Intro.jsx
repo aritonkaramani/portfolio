@@ -5,12 +5,12 @@ import { useEffect, useRef } from "react";
 export default function Intro() {
     const textRef = useRef();
 
-    var users = 100;
+    var dots = 69;
     const final = [];
 
-    for (let i = 0; i<users; i++){
+    for (let i = 0; i<dots; i++){
         final.push(<div className="circle-container">
-            <div className="circle"></div>
+            <div className="circle" id={i}></div>
         </div>
             )
     }

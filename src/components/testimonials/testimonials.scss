@@ -7,22 +7,32 @@
     justify-content: center;
     position: relative;
     min-height: 1000px;
+    @include mobile{
+        display: none;
+    }
     a{
-        @include mobile{
-            display: none;
-        }
-        color: black;
+        display: flex;
         position: absolute;
-        bottom: 0;
+        bottom: 10px;
+        @include mobile{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         .icon{
-            font-size: 60px;
+            font-size: 80px;
+            color: white;
             animation: arrowBlink 1.5s infinite;
+            @include mobile{
+                display: none;
             }
+        }
 
-            @keyframes arrowBlink {
-                100%{
+        @keyframes arrowBlink {
+            100%{
                 opacity: 0;
-                }
+            }
         }
     }
 
@@ -30,6 +40,8 @@
         height: 100px;
         position: absolute;
         cursor: pointer;
+        color: white;
+        animation: arrowBlink 2s infinite;
         @include mobile{
             display: none;
         }
@@ -39,6 +51,7 @@
         &.Right{
             right: 50px;
         }
+
     }
 
     .slider{
@@ -46,6 +59,7 @@
         position: absolute;
         left: 0;
         transition: all 1s ease;
+        color: white;
  
 
         @include mobile{

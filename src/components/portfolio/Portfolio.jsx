@@ -74,6 +74,9 @@ export default function Portfolio({popUp,setPopUp}) {
                         </div>
                     ))}
                 </div>
+                <a href="#projects">
+                    <ExpandMoreIcon className="icon"/>
+                </a>
 
             </div>
     )

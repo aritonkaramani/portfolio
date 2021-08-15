@@ -11,9 +11,7 @@ import CVFoto from '../../assets/CV-Foto-Farg.jpeg';
 export default function AboutMe() {
     return (
         <div className="aboutMe" id="aboutMe">
-                <div className="title">
-                    <p>About me</p>
-                </div>
+                    <h2>About me</h2>
                 <div className="bottom">
                     <div className="bottomleft">
                     

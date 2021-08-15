@@ -1,5 +1,5 @@
 import "./contact.scss"
-import {ReactComponent as MeetingIcon} from '../../assets/meetingicon.svg';
+import {ReactComponent as MeetingIcon} from '../../assets/mail-svgrepo-com.svg';
 
 export default function Contact() {
     return (
