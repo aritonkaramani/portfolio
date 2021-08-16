@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f78e290c.chunk.css",
-    "main.js": "/portfolio/static/js/main.389bdd31.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.389bdd31.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.a9f76519.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.a9f76519.js.map",
-    "static/js/2.2e2f6d3c.chunk.js": "/portfolio/static/js/2.2e2f6d3c.chunk.js",
-    "static/js/2.2e2f6d3c.chunk.js.map": "/portfolio/static/js/2.2e2f6d3c.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.772f9d93.chunk.css",
+    "main.js": "/portfolio/static/js/main.d4978a0d.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.d4978a0d.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.bcd5af5a.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.bcd5af5a.js.map",
+    "static/css/2.7fc9bc2b.chunk.css": "/portfolio/static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.f9b80ba2.chunk.js": "/portfolio/static/js/2.f9b80ba2.chunk.js",
+    "static/js/2.f9b80ba2.chunk.js.map": "/portfolio/static/js/2.f9b80ba2.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.f78e290c.chunk.css.map": "/portfolio/static/css/main.f78e290c.chunk.css.map",
-    "static/js/2.2e2f6d3c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.2e2f6d3c.chunk.js.LICENSE.txt",
+    "static/css/2.7fc9bc2b.chunk.css.map": "/portfolio/static/css/2.7fc9bc2b.chunk.css.map",
+    "static/css/main.772f9d93.chunk.css.map": "/portfolio/static/css/main.772f9d93.chunk.css.map",
+    "static/js/2.f9b80ba2.chunk.js.LICENSE.txt": "/portfolio/static/js/2.f9b80ba2.chunk.js.LICENSE.txt",
     "static/media/3card-min.71ddb2c8.jpg": "/portfolio/static/media/3card-min.71ddb2c8.jpg",
     "static/media/CV-Foto-Farg.5550b8e5.jpeg": "/portfolio/static/media/CV-Foto-Farg.5550b8e5.jpeg",
     "static/media/PrevCards-min.6b140efc.jpg": "/portfolio/static/media/PrevCards-min.6b140efc.jpg",
@@ -21,12 +23,14 @@
     "static/media/javasvg.b4a0adbd.svg": "/portfolio/static/media/javasvg.b4a0adbd.svg",
     "static/media/mail-svgrepo-com.1bee01c4.svg": "/portfolio/static/media/mail-svgrepo-com.1bee01c4.svg",
     "static/media/reactsvg.abc19130.svg": "/portfolio/static/media/reactsvg.abc19130.svg",
+    "static/media/todolist-min.6daf8462.jpg": "/portfolio/static/media/todolist-min.6daf8462.jpg",
     "static/media/webport-min.269411d5.jpg": "/portfolio/static/media/webport-min.269411d5.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a9f76519.js",
-    "static/js/2.2e2f6d3c.chunk.js",
-    "static/css/main.f78e290c.chunk.css",
-    "static/js/main.389bdd31.chunk.js"
+    "static/js/runtime-main.bcd5af5a.js",
+    "static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.f9b80ba2.chunk.js",
+    "static/css/main.772f9d93.chunk.css",
+    "static/js/main.d4978a0d.chunk.js"
   ]
 }
