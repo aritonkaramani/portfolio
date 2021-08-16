@@ -2,6 +2,7 @@ import PortWeb from "../src/assets/webport-min.jpg";
 import ApoJoni from "../src/assets/apotekjoni-min.jpg";
 import ThreeCard from "../src/assets/3card-min.jpg";
 import PrevCard from "../src/assets/PrevCards-min.jpg";
+import TodoList from "../src/assets/todolist-min.jpg";
 export const featuredPortfolio = [
     {
         id: 1,
@@ -18,18 +19,25 @@ export const featuredPortfolio = [
         live: "http://aritonkaramani.github.io/apotekjoni"
     },
     {
-        id: 1,
+        id: 3,
         title: "3-Card",
         img: <img src={ThreeCard} alt=""/>,
         git: "https://github.com/aritonkaramani/3-card",
         live: "https://aritonkaramani.github.io/3-card",
     },
     {
-        id: 2,
+        id: 4,
         title: "Preview-Card",
         img: <img src={PrevCard} alt=""/>,
         git: "https://github.com/aritonkaramani/stats-preview-card-component-main",
         live: "https://aritonkaramani.github.io/stats-preview-card-component-main/",
+    },
+    {
+        id: 5,
+        title: "To-do list",
+        img: <img src={TodoList} alt=""/>,
+        git: "https://github.com/aritonkaramani/to-do-list",
+        live: "https://aritonkaramani.github.io/to-do-list"
     }
 ]
 export const webAppPortfolio = [
@@ -62,5 +70,14 @@ export const worksPortfolio = [
         img: <img src={PrevCard} alt=""/>,
         git: "https://github.com/aritonkaramani/stats-preview-card-component-main",
         live: "https://aritonkaramani.github.io/stats-preview-card-component-main/",
+    }
+]
+export const webApps = [
+    {
+        id: 1,
+        title: "To-do List",
+        img: <img src={TodoList} alt=""/>,
+        git: "https://github.com/aritonkaramani/to-do-list",
+        live: "https://aritonkaramani.github.io/to-do-list"
     }
 ]

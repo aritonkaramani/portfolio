@@ -1,8 +1,9 @@
 import "./portfolio.scss";
 import PortfolioList from "../portfolioList/PortfolioList";
 import { useEffect, useState } from "react";
-import { featuredPortfolio, webAppPortfolio, worksPortfolio } from "../../data";
+import { featuredPortfolio, webAppPortfolio, worksPortfolio, webApps } from "../../data";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { Fade, Slide } from "react-awesome-reveal";
 
 export default function Portfolio({popUp,setPopUp}) {
 
@@ -21,6 +22,10 @@ export default function Portfolio({popUp,setPopUp}) {
         {
             id: "test3",
             title: "Cards",
+        },
+        {
+            id:"webApps",
+            title: "Web Apps"
         }
     ];
 
@@ -35,6 +40,9 @@ export default function Portfolio({popUp,setPopUp}) {
             case "test3":
                 setData(worksPortfolio);
                 break;
+            case "webApps":
+                setData(webApps);
+                break;
 
             default:
                 setData(featuredPortfolio);
@@ -45,6 +53,7 @@ export default function Portfolio({popUp,setPopUp}) {
         <div className="portfolio" id="designs">
             <h2>Designs</h2>
             <ul>
+                
                 {list.map(item=>(
                     <PortfolioList 
                     title={item.title} 
@@ -54,6 +63,7 @@ export default function Portfolio({popUp,setPopUp}) {
                 ))}
             </ul>
             
+            <Slide duration="2000">
                 <div className="container">
                     {data.map(d=>(
                         <div className="item">
@@ -74,6 +84,7 @@ export default function Portfolio({popUp,setPopUp}) {
                         </div>
                     ))}
                 </div>
+                </Slide>
                 <a href="#projects">
                     <ExpandMoreIcon className="icon"/>
                 </a>

@@ -10,6 +10,8 @@ import { GitHub } from "@material-ui/icons";
 import { Visibility } from "@material-ui/icons";
 import webportimg from '../../assets/webport-min.jpg';
 import apotekjoni from '../../assets/apotekjoni-min.jpg';
+import todolist from '../../assets/todolist-min.jpg'
+import { Fade } from "react-awesome-reveal";
 
 export default function Testimonials() {
     const [currentSlide,setCurrentSlide] = useState(0);
@@ -39,9 +41,9 @@ export default function Testimonials() {
         title: "React To-DO list",
         desc: 
         "A TO-DO list created with React. Utilizes SASS, JavaScript",
-        img: "",
-        git: "",
-        preview: "",
+        img: todolist,
+        git: "https://github.com/aritonkaramani/to-do-list",
+        preview: "https://aritonkaramani.github.io/to-do-list",
     },
 ];
 
@@ -56,6 +58,7 @@ export default function Testimonials() {
             className="slider" 
             style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
                 {data.map(d =>(
+                    <Fade duration="3000">
                     <div className="container">
                     <div className="item">
                     <div className="left">
@@ -80,6 +83,7 @@ export default function Testimonials() {
                     </div>
                     </div>
                 </div>
+                </Fade>
                 ))}
             </div>
             <ArrowBack className="arrow Left" onClick={()=>handleClick("left")}/>
