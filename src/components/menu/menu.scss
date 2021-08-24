@@ -29,8 +29,15 @@
         font-weight: 300;
         color: white;
         width: 60%;
+        .projects{
+            @include mobile{
+                display: none;
+
+            }
+        }
         li{
             margin-bottom: 25px;
+            
             .icon{
                 margin: 5px;
                 cursor: pointer;

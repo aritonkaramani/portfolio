@@ -8,9 +8,9 @@ import { Work } from "@material-ui/icons";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { GitHub } from "@material-ui/icons";
 import { Visibility } from "@material-ui/icons";
-import webportimg from '../../assets/webport-min.jpg';
+import webportimg from '../../assets/webport-min.png';
 import apotekjoni from '../../assets/apotekjoni-min.jpg';
-import todolist from '../../assets/todolist-min.jpg'
+import todolist from '../../assets/todoList-min.png'
 import { Fade } from "react-awesome-reveal";
 
 export default function Testimonials() {

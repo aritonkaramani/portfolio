@@ -1,8 +1,9 @@
-import PortWeb from "../src/assets/webport-min.jpg";
+import PortWeb from "../src/assets/webport-min.png";
 import ApoJoni from "../src/assets/apotekjoni-min.jpg";
 import ThreeCard from "../src/assets/3card-min.jpg";
 import PrevCard from "../src/assets/PrevCards-min.jpg";
-import TodoList from "../src/assets/todolist-min.jpg";
+import TodoList from "../src/assets/todoList-min.png";
+import WeatherApp from "../src/assets/weatherapp-min.png";
 export const featuredPortfolio = [
     {
         id: 1,
@@ -38,6 +39,14 @@ export const featuredPortfolio = [
         img: <img src={TodoList} alt=""/>,
         git: "https://github.com/aritonkaramani/to-do-list",
         live: "https://aritonkaramani.github.io/to-do-list"
+    },
+    {
+        id: 6,
+        title: "WeatherApp",
+        img: <img src={WeatherApp} alt=""/>,
+        git: "https://github.com/aritonkaramani/weatherapp",
+        live: "https://aritonkaramani.github.io/weatherapp"
+
     }
 ]
 export const webAppPortfolio = [
@@ -79,5 +88,13 @@ export const webApps = [
         img: <img src={TodoList} alt=""/>,
         git: "https://github.com/aritonkaramani/to-do-list",
         live: "https://aritonkaramani.github.io/to-do-list"
+    },
+    {
+        id: 2,
+        title: "WeatherApp",
+        img: <img src={WeatherApp} alt=""/>,
+        git: "https://github.com/aritonkaramani/weatherapp",
+        live: "https://aritonkaramani.github.io/weatherapp"
+
     }
 ]

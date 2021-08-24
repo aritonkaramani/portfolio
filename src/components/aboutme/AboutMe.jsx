@@ -37,7 +37,7 @@ export default function AboutMe() {
                             <div className="info">
                                
                                 <p>I am a front end developer with a passion for creating and coding. 
-                                    I do mostly frontend but I'm always willing to expand my knowledge in unknown areas.
+                                    I do mostly front end but I'm always willing to expand my knowledge in unknown areas.
                                     Feel free to look at my projects if you scroll down or if you have seen enough  
                                 </p>
                                 
