@@ -6,6 +6,8 @@ import {ReactComponent as Sassvg} from '../../assets/icons8-sass.svg';
 import {ReactComponent as HTMLsvg} from '../../assets/htmlsvg.svg';
 import {ReactComponent as Reactsvg} from '../../assets/reactsvg.svg';
 import {ReactComponent as Git8} from '../../assets/icons8-git.svg';
+import {ReactComponent as Vuejs} from '../../assets/icons8-vue-js.svg';
+import {ReactComponent as Webpacksvg} from '../../assets/webpack-on-dark.svg';
 import CVFoto from '../../assets/CV-Foto-Farg.jpeg';
 import { Fade } from "react-awesome-reveal";
 
@@ -66,6 +68,14 @@ export default function AboutMe() {
                             <div className="git">
                                 <Git8 className="Ikon"/>
                                 Git
+                            </div>
+                            <div className="wpfive">
+                                <Webpacksvg className="Ikon"/>
+                                Webpack 5
+                            </div>
+                            <div className="vuejs">
+                                <Vuejs className="Ikon"/>
+                                Vue
                             </div>
                             </div>
                             

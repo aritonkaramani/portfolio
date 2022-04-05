@@ -3,9 +3,9 @@ import PortfolioList from "../portfolioList/PortfolioList";
 import { useEffect, useState } from "react";
 import { featuredPortfolio, webAppPortfolio, worksPortfolio, webApps } from "../../data";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 
-export default function Portfolio({popUp,setPopUp}) {
+export default function Portfolio() {
 
 
     const [selected,setSelected] = useState("featured");
@@ -54,12 +54,13 @@ export default function Portfolio({popUp,setPopUp}) {
             <h2>Designs</h2>
             <ul>
                 
-                {list.map(item=>(
+                {list.map((item,index)=>(
                     <PortfolioList 
                     title={item.title} 
                     active={selected === item.id} 
                     setSelected={setSelected}
-                    id={item.id}/>
+                    id={item.id}
+                    key={index}/>
                 ))}
             </ul>
             

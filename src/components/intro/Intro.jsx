@@ -9,8 +9,8 @@ export default function Intro() {
     const final = [];
 
     for (let i = 0; i<dots; i++){
-        final.push(<div className="circle-container">
-            <div className="circle" id={i}></div>
+        final.push(<div key={i + 'h'} className="circle-container">
+            <div className="circle" id={i} key={i}></div>
         </div>
             )
     }
@@ -30,13 +30,14 @@ export default function Intro() {
                     
                     
                     <div className="title">
-                    <h2>Hello! My name is</h2>
-                    <h1>Ariton Karamani</h1>
-                    <h3><span ref={textRef}></span></h3>
+                        <h2>Hello! My name is</h2>
+                        <h1>Ariton Karamani</h1>
+                        <h3>
+                            <span ref={textRef}></span>
+                        </h3>
                     </div>
-                    
                 </div>
-            <a href="#aboutMe">
+                <a href="#aboutMe">
                     <ExpandMoreIcon className="icon"/>
                 </a>
         </div>
